@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Table</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+		<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<div class="content">
+			<div class="block_text">
+				<div class="block_text-title">
+					<h1>Эргономика &mdash; ключ к успеху современного человека</h1>
+				</div>
+				<div class="block_text-subtitle">
+					<h2>Cтильная столешница , выполненной из экологически безопасного материала (ДСП), и усиленной
+						стальной рамы не составит труда разместить на поверхности инновационного стола большое
+						количество крупногабаритной техники: стол выдерживает нагрузку до 80 кг.</h2>
+				</div>
+
+				<div class="block_table">
+					<div class="block_table_img">
+						<div class="block_table_img-top"></div>
+						<div class="block_table_img-bottom"></div>
+					</div>
+					<div class="block_table_btn">
+						<div class="block_table_btn-top">вверх</div>
+						<div class="block_table_btn-bottom">вниз</div>
+					</div>
+				</div>
+
+
+
+				<div class="block_text-subtitle">
+					<h2>Также столешница, обладающая меламиновым покрытием, хорошо переносит механические воздействия
+						(царапины или удары), при контакте с водой не разрушается, устойчиво переносит бытовые
+						химические вещества и не выгорает под воздействием ультрафиолета.</h2>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			let btnUp = document.querySelector('.block_table_btn-top');
+			let btnDown = document.querySelector('.block_table_btn-bottom');
+			let tableMove = document.querySelector('.block_table_img-top');
+
+
+			function upTable() {
+				btnUp.addEventListener('click', () => {
+					tableMove.classList.add("active");
+					console.log(1)
+				})
+			}
+			upTable()
+			function downTable() {
+				btnDown.addEventListener('click', () => {
+					tableMove.classList.remove("active");
+					console.log(2)
+				})
+			}
+
+			downTable()
+		</script>
+    </body>
+</html>
